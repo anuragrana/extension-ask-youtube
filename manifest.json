@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "YT Auto Ask Summary",
+  "version": "1.0",
+  "description": "On each YouTube watch page, opens YouTube's Ask pane and sends a summary prompt automatically.",
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
